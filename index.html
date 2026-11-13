@@ -242,7 +242,7 @@
             <div class="fintro">汇总 2026 年 11 月标箱组各岗位渠道销售政策、市场支持政策、平台下单规则及全品项盘价、政策力度与建议零售价明细。<span class="fmeta"> · 47.6 MB · 11月13日更新</span></div>
           </div>
           <div class="frow-a">
-            <button class="mini dl" data-href="files/%E3%80%90%E6%A0%87%E7%AE%B1%E7%BB%84%E3%80%912026%E5%B9%B411%E6%9C%88%E6%95%B4%E4%BD%93%E6%94%BF%E7%AD%96%2B%E4%BA%A7%E5%93%81%E7%9B%98%E4%BB%B7%E4%B8%8E%E6%94%BF%E7%AD%96%E5%8A%9B%E5%BA%A6%E6%98%8E%E7%BB%86%E8%A1%A8.xlsx" style="background:#22C55E">下载</button>
+            <button class="mini dl" data-href="parts/part" data-parts="6" data-filename="【标箱组】2026年11月整体政策+产品盘价与政策力度明细表.xlsx" style="background:#22C55E">下载</button>
           </div>
         </div>
         <div class="frow" data-name="标箱组产品手册_261029.pdf 产品手册.pdf 标箱组乳品、果蔬汁、酒品类产品导购手册，含产品卖点、规格与建议零售价。">
@@ -309,9 +309,40 @@
     document.body.appendChild(a); a.click(); a.remove();
   }
 
+  // 超大文件：同源分片并发拉取 → 合并为完整 Blob → 按原文件名保存
+  function downloadParts(base, n, filename) {
+    var jobs = [];
+    for (var i = 1; i <= n; i++) {
+      var suffix = (i < 10 ? '0' : '') + i + '.bin';
+      jobs.push(fetch(base + suffix).then(function (r) {
+        if (!r.ok) throw new Error('part HTTP ' + r.status);
+        return r.blob();
+      }));
+    }
+    return Promise.all(jobs).then(function (blobs) {
+      var a = document.createElement('a');
+      a.href = URL.createObjectURL(new Blob(blobs));
+      a.download = filename;
+      document.body.appendChild(a); a.click();
+      setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 3000);
+    });
+  }
+
   // 下载：优先 fetch + blob（页面不跳转、按钮有即时反馈）；失败回退直接导航
   function download(href, btn) {
     var reset = function () { if (btn) { btn.textContent = '下载'; btn.disabled = false; } };
+    if (btn && btn.getAttribute('data-parts')) {
+      if (!window.fetch || !window.Promise || !supportsDownload) {
+        alert('当前浏览器不支持大文件下载，请用系统浏览器打开后重试'); return;
+      }
+      var n = parseInt(btn.getAttribute('data-parts'), 10);
+      var filename = btn.getAttribute('data-filename') || fileNameOf(href);
+      btn.textContent = '准备中'; btn.disabled = true;
+      downloadParts(href, n, filename).then(reset).catch(function () {
+        alert('下载未完成，请检查网络后重试'); reset();
+      });
+      return;
+    }
     if (!window.fetch || !supportsDownload || !btn) { directDownload(href); return; }
     btn.textContent = '准备中'; btn.disabled = true;
     fetch(href).then(function (r) {
