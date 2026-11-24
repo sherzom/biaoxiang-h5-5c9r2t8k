@@ -59,7 +59,7 @@
   /* ===== 分区（高度按文件数加权伸缩） ===== */
   .sec {
     background: #fff; border: 1px solid #E8EEF6; border-radius: 8px;
-    padding: 2px 7px 3px; margin-top: 2px;
+    padding: 1px 7px 2px; margin-top: 2px;
     display: flex; flex-direction: column;
   }
   .sec-head {
@@ -75,8 +75,8 @@
   .os-pill { font-size: 8.5px; font-weight: 700; border-radius: 4px; padding: 1px 5px; white-space: nowrap; flex-shrink: 0; margin-left: 2px; }
   .os-mini { font-size: 7.5px; font-weight: 600; border-radius: 3px; padding: 1px 4px; margin-left: 6px; white-space: nowrap; flex-shrink: 0; }
 
-  /* ===== 文件行（可随屏高伸缩，封顶 30px） ===== */
-  .frow { display: flex; align-items: center; gap: 5px; padding: 0px 1px; cursor: pointer; flex: 1 1 0; max-height: 30px; }
+  /* ===== 文件行（可随屏高伸缩，封顶 25px） ===== */
+  .frow { display: flex; align-items: center; gap: 5px; padding: 0px 1px; cursor: pointer; flex: 1 1 0; max-height: 25px; }
   .frow:active { background: #F7FAFD; }
   .badge {
     flex-shrink: 0; width: 23px; height: 15px; border-radius: 4px;
@@ -87,10 +87,10 @@
   .badge.xls { background: #E6F6E8; color: #3FA34D; }
   .badge.img { background: #EDE9FE; color: #7C3AED; }
   .frow-t { flex: 1; min-width: 0; }
-  .fname { display: flex; align-items: center; font-size: 10px; font-weight: 600; line-height: 1.12; min-width: 0; }
+  .fname { display: flex; align-items: center; font-size: 9.5px; font-weight: 600; line-height: 1.1; min-width: 0; }
   .fn-t { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .fintro {
-    font-size: 8.2px; color: #64748F; line-height: 1.08; white-space: nowrap;
+    font-size: 8px; color: #64748F; line-height: 1.05; white-space: nowrap;
     overflow: hidden; text-overflow: ellipsis;
   }
   .fmeta { color: #B4C0CF; }
@@ -112,7 +112,7 @@
   <div class="hero-inner">
     <div>
       <h1>标箱组 · 培训资料库</h1>
-      <p class="sub" id="sub">按业务场景 · 共 <b>19</b> 份 · <b>6</b> 大场景</p>
+      <p class="sub" id="sub">按业务场景 · 共 <b>21</b> 份 · <b>6</b> 大场景</p>
     </div>
     <div class="logo-box"><img src="assets/logo.png" alt="标箱组"></div>
   </div>
@@ -134,7 +134,7 @@
       <svg class="sec-ic" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="background:#0EA5E91F"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-3 3-3-3z"/></svg>
       <span class="sec-title">基础工具</span>
       <span class="cnt" style="color:#0EA5E9;background:#0EA5E91F">2</span>
-      <span class="os-pill" style="color:#EA580C;background:#FEF0E7">造旺计划APP</span><span class="os-pill" style="color:#1C6FDB;background:#E7F0FC">SFA APP</span>
+      <span class="os-pill" style="color:#EA580C;background:#FEF0E7">造旺计划APP</span><span class="os-pill" style="color:#1C6FDB;background:#E7F0FC">造旺小助手APP</span>
       <span class="sec-desc">APP下载与政策查询入口</span>
     </div>
     
@@ -148,11 +148,11 @@
             <button class="mini dl" data-href="files/%E9%80%A0%E6%97%BA%E8%AE%A1%E5%88%92APP%E4%B8%8B%E8%BD%BD%E4%B8%8E%E7%95%8C%E9%9D%A2%E5%8A%9F%E8%83%BD%E5%AF%BC%E8%88%AA.pdf" style="background:#0EA5E9">下载</button>
           </div>
         </div>
-        <div class="frow" data-name="sfaapp下载与政策查询路径.pdf sfaapp下载与政策查询路径.pdf sfa工具下载与销售政策查询路径。">
+        <div class="frow" data-name="sfaapp下载与政策查询路径.pdf sfaapp下载与政策查询路径.pdf 造旺小助手app下载与销售政策查询路径。">
           <span class="badge pdf">PDF</span>
           <div class="frow-t">
-            <div class="fname"><span class="fn-t">SFAAPP下载与政策查询路径.pdf</span><span class="os-mini" style="color:#1C6FDB;background:#E7F0FC">SFA APP</span></div>
-            <div class="fintro">SFA工具下载与销售政策查询路径。<span class="fmeta"> · 1.2 MB · 11月16日更新</span></div>
+            <div class="fname"><span class="fn-t">SFAAPP下载与政策查询路径.pdf</span><span class="os-mini" style="color:#1C6FDB;background:#E7F0FC">造旺小助手APP</span></div>
+            <div class="fintro">造旺小助手APP下载与销售政策查询路径。<span class="fmeta"> · 1.2 MB · 11月16日更新</span></div>
           </div>
           <div class="frow-a">
             <button class="mini dl" data-href="files/SFAAPP%E4%B8%8B%E8%BD%BD%E4%B8%8E%E6%94%BF%E7%AD%96%E6%9F%A5%E8%AF%A2%E8%B7%AF%E5%BE%84.pdf" style="background:#0EA5E9">下载</button>
@@ -164,14 +164,14 @@
       <svg class="sec-ic" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="background:#3B82F61F"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="10" r="2.2"/><path d="M8.5 14.8c-2 0-3.5 1-3.5 2.3V19h7v-1.9c0-1.3-1.5-2.3-3.5-2.3z"/><path d="M14.5 9h4M14.5 12.5h4"/></svg>
       <span class="sec-title">组织与人事</span>
       <span class="cnt" style="color:#3B82F6;background:#3B82F61F">3</span>
-      <span class="os-pill" style="color:#1C6FDB;background:#E7F0FC">SFA APP</span>
+      <span class="os-pill" style="color:#1C6FDB;background:#E7F0FC">造旺小助手APP</span>
       <span class="sec-desc">薪酬、差旅与人事制度</span>
     </div>
     
         <div class="frow" data-name="26年q411 标箱组薪资方案 大区总监.xlsx 薪资方案 大区总监.xlsx 各岗位底薪职级、绩效与调薪晋升降级规则。">
           <span class="badge xls">XLS</span>
           <div class="frow-t">
-            <div class="fname"><span class="fn-t">薪资方案 大区总监.xlsx</span><span class="os-mini" style="color:#1C6FDB;background:#E7F0FC">SFA APP</span></div>
+            <div class="fname"><span class="fn-t">薪资方案 大区总监.xlsx</span><span class="os-mini" style="color:#1C6FDB;background:#E7F0FC">造旺小助手APP</span></div>
             <div class="fintro">各岗位底薪职级、绩效与调薪晋升降级规则。<span class="fmeta"> · 680 KB · 11月13日更新</span></div>
           </div>
           <div class="frow-a">
@@ -181,7 +181,7 @@
         <div class="frow" data-name="差旅（分贝通）使用手册.pptx 差旅（分贝通）使用手册.pptx 出差申请、分贝通订票与差旅报销流程。">
           <span class="badge ppt">PPT</span>
           <div class="frow-t">
-            <div class="fname"><span class="fn-t">差旅（分贝通）使用手册.pptx</span><span class="os-mini" style="color:#1C6FDB;background:#E7F0FC">SFA APP</span></div>
+            <div class="fname"><span class="fn-t">差旅（分贝通）使用手册.pptx</span><span class="os-mini" style="color:#1C6FDB;background:#E7F0FC">造旺小助手APP</span></div>
             <div class="fintro">出差申请、分贝通订票与差旅报销流程。<span class="fmeta"> · 22.7 MB · 10月13日更新</span></div>
           </div>
           <div class="frow-a">
@@ -191,7 +191,7 @@
         <div class="frow" data-name="【标箱组】大区总监差旅方案.xlsx 大区总监差旅方案.xlsx 各岗位住宿、交通、餐补等额度标准。">
           <span class="badge xls">XLS</span>
           <div class="frow-t">
-            <div class="fname"><span class="fn-t">大区总监差旅方案.xlsx</span><span class="os-mini" style="color:#1C6FDB;background:#E7F0FC">SFA APP</span></div>
+            <div class="fname"><span class="fn-t">大区总监差旅方案.xlsx</span><span class="os-mini" style="color:#1C6FDB;background:#E7F0FC">造旺小助手APP</span></div>
             <div class="fintro">各岗位住宿、交通、餐补等额度标准。<span class="fmeta"> · 121 KB · 11月13日更新</span></div>
           </div>
           <div class="frow-a">
@@ -204,14 +204,14 @@
       <svg class="sec-ic" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="background:#F59E0B1F"><polyline points="22 7 13.5 15.5 9.5 11.5 2 19"/><polyline points="16 7 22 7 22 13"/></svg>
       <span class="sec-title">销售管理</span>
       <span class="cnt" style="color:#F59E0B;background:#F59E0B1F">2</span>
-      <span class="os-pill" style="color:#7C3AED;background:#F0EAFE">SFA网页端</span>
+      <span class="os-pill" style="color:#7C3AED;background:#F0EAFE">造旺小助手网页端</span>
       <span class="sec-desc">目标与过程考核</span>
     </div>
     
         <div class="frow" data-name="q3过程考核要求8月大区总监 (4).xlsx 过程考核要求.xlsx 考勤、拜访等六大模块考核与扣罚标准。">
           <span class="badge xls">XLS</span>
           <div class="frow-t">
-            <div class="fname"><span class="fn-t">过程考核要求.xlsx</span><span class="os-mini" style="color:#1C6FDB;background:#E7F0FC">SFA APP</span></div>
+            <div class="fname"><span class="fn-t">过程考核要求.xlsx</span><span class="os-mini" style="color:#1C6FDB;background:#E7F0FC">造旺小助手APP</span></div>
             <div class="fintro">考勤、拜访等六大模块考核与扣罚标准。<span class="fmeta"> · 29 KB · 11月13日更新</span></div>
           </div>
           <div class="frow-a">
@@ -221,7 +221,7 @@
         <div class="frow" data-name="目标设置&amp;人员汰换规则.xlsx 目标设置&amp;人员汰换规则.xlsx 目标制定拆分与人员汰换规则。">
           <span class="badge xls">XLS</span>
           <div class="frow-t">
-            <div class="fname"><span class="fn-t">目标设置&amp;人员汰换规则.xlsx</span><span class="os-mini" style="color:#7C3AED;background:#F0EAFE">SFA网页端</span></div>
+            <div class="fname"><span class="fn-t">目标设置&amp;人员汰换规则.xlsx</span><span class="os-mini" style="color:#7C3AED;background:#F0EAFE">造旺小助手网页端</span></div>
             <div class="fintro">目标制定拆分与人员汰换规则。<span class="fmeta"> · 1.1 MB · 11月11日更新</span></div>
           </div>
           <div class="frow-a">
@@ -229,29 +229,39 @@
           </div>
         </div>
   </section>
-  <section class="sec" id="sc-expense" style="flex-grow:4;flex-shrink:0">
+  <section class="sec" id="sc-expense" style="flex-grow:5;flex-shrink:0">
     <div class="sec-head">
       <svg class="sec-ic" viewBox="0 0 24 24" fill="none" stroke="#1C6FDB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="background:#1C6FDB1F"><path d="M5 3h14v18l-2.3-1.6-2.4 1.6-2.3-1.6L9.7 21 7.3 19.4 5 21z"/><path d="M8.5 8h7M8.5 12h5"/></svg>
       <span class="sec-title">渠道政策与费用</span>
-      <span class="cnt" style="color:#1C6FDB;background:#1C6FDB1F">4</span>
-      <span class="os-pill" style="color:#1C6FDB;background:#E7F0FC">SFA APP</span>
+      <span class="cnt" style="color:#1C6FDB;background:#1C6FDB1F">5</span>
+      <span class="os-pill" style="color:#1C6FDB;background:#E7F0FC">造旺小助手APP</span>
       <span class="sec-desc">政策盘价、费用形式与旺金币</span>
     </div>
     
         <div class="frow" data-name="旺金币发放操作说明.png 旺金币发放操作说明.png 旺金币发放对象、规则与操作入口。">
           <span class="badge img">IMG</span>
           <div class="frow-t">
-            <div class="fname"><span class="fn-t">旺金币发放操作说明.png</span><span class="os-mini" style="color:#7C3AED;background:#F0EAFE">SFA网页端</span></div>
+            <div class="fname"><span class="fn-t">旺金币发放操作说明.png</span><span class="os-mini" style="color:#7C3AED;background:#F0EAFE">造旺小助手网页端</span></div>
             <div class="fintro">旺金币发放对象、规则与操作入口。<span class="fmeta"> · 1.9 MB · 11月13日更新</span></div>
           </div>
           <div class="frow-a">
             <button class="mini dl" data-href="files/%E6%97%BA%E9%87%91%E5%B8%81%E5%8F%91%E6%94%BE%E6%93%8D%E4%BD%9C%E8%AF%B4%E6%98%8E.png" style="background:#1C6FDB">下载</button>
           </div>
         </div>
+        <div class="frow" data-name="旺金币转移操作说明.png 旺金币转移操作说明.png 旺金币组织账户间转移的操作规则与流程。">
+          <span class="badge img">IMG</span>
+          <div class="frow-t">
+            <div class="fname"><span class="fn-t">旺金币转移操作说明.png</span><span class="os-mini" style="color:#7C3AED;background:#F0EAFE">造旺小助手网页端</span></div>
+            <div class="fintro">旺金币组织账户间转移的操作规则与流程。<span class="fmeta"> · 3.0 MB · 11月17日更新</span></div>
+          </div>
+          <div class="frow-a">
+            <button class="mini dl" data-href="files/%E6%97%BA%E9%87%91%E5%B8%81%E8%BD%AC%E7%A7%BB%E6%93%8D%E4%BD%9C%E8%AF%B4%E6%98%8E.png" style="background:#1C6FDB">下载</button>
+          </div>
+        </div>
         <div class="frow" data-name="渠道政策费用形式介绍与旺金币使用规则.pdf 渠道政策费用形式介绍与旺金币使用规则.pdf 赠品、抵扣、折扣等费用形式与旺金币规则。">
           <span class="badge pdf">PDF</span>
           <div class="frow-t">
-            <div class="fname"><span class="fn-t">渠道政策费用形式介绍与旺金币使用规则.pdf</span><span class="os-mini" style="color:#7C3AED;background:#F0EAFE">SFA网页端</span><span class="os-mini" style="color:#1C6FDB;background:#E7F0FC">SFA APP</span></div>
+            <div class="fname"><span class="fn-t">渠道政策费用形式介绍与旺金币使用规则.pdf</span><span class="os-mini" style="color:#7C3AED;background:#F0EAFE">造旺小助手网页端</span><span class="os-mini" style="color:#1C6FDB;background:#E7F0FC">造旺小助手APP</span></div>
             <div class="fintro">赠品、抵扣、折扣等费用形式与旺金币规则。<span class="fmeta"> · 777 KB · 11月16日更新</span></div>
           </div>
           <div class="frow-a">
@@ -261,7 +271,7 @@
         <div class="frow" data-name="【标箱组】2026年11月整体政策+产品盘价与政策力度明细表.xlsx 整体政策+产品盘价与政策力度明细表.xlsx 11月渠道销售政策、下单规则与全品项盘价明细。">
           <span class="badge xls">XLS</span>
           <div class="frow-t">
-            <div class="fname"><span class="fn-t">整体政策+产品盘价与政策力度明细表.xlsx</span><span class="os-mini" style="color:#1C6FDB;background:#E7F0FC">SFA APP</span></div>
+            <div class="fname"><span class="fn-t">整体政策+产品盘价与政策力度明细表.xlsx</span><span class="os-mini" style="color:#1C6FDB;background:#E7F0FC">造旺小助手APP</span></div>
             <div class="fintro">11月渠道销售政策、下单规则与全品项盘价明细。<span class="fmeta"> · 47.6 MB · 11月13日更新</span></div>
           </div>
           <div class="frow-a">
@@ -271,7 +281,7 @@
         <div class="frow" data-name="标箱组产品手册_261029.pdf 产品手册.pdf 乳品、果蔬汁、酒类产品卖点与建议零售价。">
           <span class="badge pdf">PDF</span>
           <div class="frow-t">
-            <div class="fname"><span class="fn-t">产品手册.pdf</span><span class="os-mini" style="color:#1C6FDB;background:#E7F0FC">SFA APP</span></div>
+            <div class="fname"><span class="fn-t">产品手册.pdf</span><span class="os-mini" style="color:#1C6FDB;background:#E7F0FC">造旺小助手APP</span></div>
             <div class="fintro">乳品、果蔬汁、酒类产品卖点与建议零售价。<span class="fmeta"> · 8.5 MB · 11月13日更新</span></div>
           </div>
           <div class="frow-a">
@@ -319,11 +329,11 @@
           </div>
         </div>
   </section>
-  <section class="sec" id="sc-order" style="flex-grow:5;flex-shrink:0">
+  <section class="sec" id="sc-order" style="flex-grow:6;flex-shrink:0">
     <div class="sec-head">
       <svg class="sec-ic" viewBox="0 0 24 24" fill="none" stroke="#EA580C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="background:#EA580C1F"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2 3h2.2l2.3 12h11l2.3-9H5.2"/></svg>
       <span class="sec-title">货需与订单</span>
-      <span class="cnt" style="color:#EA580C;background:#EA580C1F">5</span>
+      <span class="cnt" style="color:#EA580C;background:#EA580C1F">6</span>
       <span class="os-pill" style="color:#EA580C;background:#FEF0E7">造旺计划APP</span>
       <span class="sec-desc">订货、履约、售后、货需与票据</span>
     </div>
@@ -351,7 +361,7 @@
         <div class="frow" data-name="销售预估（货需）提报操作手册.pdf 销售预估（货需）提报操作手册.pdf 销售预估（货需）提报新流程与时限。">
           <span class="badge pdf">PDF</span>
           <div class="frow-t">
-            <div class="fname"><span class="fn-t">销售预估（货需）提报操作手册.pdf</span><span class="os-mini" style="color:#7C3AED;background:#F0EAFE">SFA网页端</span></div>
+            <div class="fname"><span class="fn-t">销售预估（货需）提报操作手册.pdf</span><span class="os-mini" style="color:#7C3AED;background:#F0EAFE">造旺小助手网页端</span></div>
             <div class="fintro">销售预估（货需）提报新流程与时限。<span class="fmeta"> · 926 KB · 11月6日更新</span></div>
           </div>
           <div class="frow-a">
@@ -368,14 +378,24 @@
             <button class="mini dl" data-href="files/%E9%A2%84%E6%89%93%E6%AC%BE%E6%93%8D%E4%BD%9C%E6%8C%87%E5%BC%95.pdf" style="background:#EA580C">下载</button>
           </div>
         </div>
-        <div class="frow" data-name="发票申请操作指引.pdf 发票申请操作指引.pdf 发票申请的操作流程与填写要点。">
-          <span class="badge pdf">PDF</span>
+        <div class="frow" data-name="发票申请操作指引.png 发票申请操作指引.png 发票申请的操作流程与填写要点。">
+          <span class="badge img">IMG</span>
           <div class="frow-t">
-            <div class="fname"><span class="fn-t">发票申请操作指引.pdf</span><span class="os-mini" style="color:#EA580C;background:#FEF0E7">造旺计划APP</span></div>
-            <div class="fintro">发票申请的操作流程与填写要点。<span class="fmeta"> · 409 KB · 11月16日更新</span></div>
+            <div class="fname"><span class="fn-t">发票申请操作指引.png</span><span class="os-mini" style="color:#EA580C;background:#FEF0E7">造旺计划APP</span></div>
+            <div class="fintro">发票申请的操作流程与填写要点。<span class="fmeta"> · 1.9 MB · 11月17日更新</span></div>
           </div>
           <div class="frow-a">
-            <button class="mini dl" data-href="files/%E5%8F%91%E7%A5%A8%E7%94%B3%E8%AF%B7%E6%93%8D%E4%BD%9C%E6%8C%87%E5%BC%95.pdf" style="background:#EA580C">下载</button>
+            <button class="mini dl" data-href="files/%E5%8F%91%E7%A5%A8%E7%94%B3%E8%AF%B7%E6%93%8D%E4%BD%9C%E6%8C%87%E5%BC%95.png" style="background:#EA580C">下载</button>
+          </div>
+        </div>
+        <div class="frow" data-name="库存公共池（释放库存）操作说明.png 库存公共池（释放库存）操作说明.png 库存公共池释放库存的操作流程与规则。">
+          <span class="badge img">IMG</span>
+          <div class="frow-t">
+            <div class="fname"><span class="fn-t">库存公共池（释放库存）操作说明.png</span><span class="os-mini" style="color:#EA580C;background:#FEF0E7">造旺计划APP</span></div>
+            <div class="fintro">库存公共池释放库存的操作流程与规则。<span class="fmeta"> · 1.6 MB · 11月17日更新</span></div>
+          </div>
+          <div class="frow-a">
+            <button class="mini dl" data-href="files/%E5%BA%93%E5%AD%98%E5%85%AC%E5%85%B1%E6%B1%A0%EF%BC%88%E9%87%8A%E6%94%BE%E5%BA%93%E5%AD%98%EF%BC%89%E6%93%8D%E4%BD%9C%E8%AF%B4%E6%98%8E.png" style="background:#EA580C">下载</button>
           </div>
         </div>
   </section></div>
@@ -391,7 +411,7 @@
         <div class="frow" data-name="26年q411 标箱组薪资方案 大区总监.xlsx 薪资方案 大区总监.xlsx 各岗位底薪职级、绩效与调薪晋升降级规则。">
           <span class="badge xls">XLS</span>
           <div class="frow-t">
-            <div class="fname"><span class="fn-t">薪资方案 大区总监.xlsx</span><span class="os-mini" style="color:#1C6FDB;background:#E7F0FC">SFA APP</span></div>
+            <div class="fname"><span class="fn-t">薪资方案 大区总监.xlsx</span><span class="os-mini" style="color:#1C6FDB;background:#E7F0FC">造旺小助手APP</span></div>
             <div class="fintro">各岗位底薪职级、绩效与调薪晋升降级规则。<span class="fmeta"> · 680 KB · 11月13日更新</span></div>
           </div>
           <div class="frow-a">
@@ -410,7 +430,7 @@
         <div class="frow" data-name="差旅（分贝通）使用手册.pptx 差旅（分贝通）使用手册.pptx 出差申请、分贝通订票与差旅报销流程。">
           <span class="badge ppt">PPT</span>
           <div class="frow-t">
-            <div class="fname"><span class="fn-t">差旅（分贝通）使用手册.pptx</span><span class="os-mini" style="color:#1C6FDB;background:#E7F0FC">SFA APP</span></div>
+            <div class="fname"><span class="fn-t">差旅（分贝通）使用手册.pptx</span><span class="os-mini" style="color:#1C6FDB;background:#E7F0FC">造旺小助手APP</span></div>
             <div class="fintro">出差申请、分贝通订票与差旅报销流程。<span class="fmeta"> · 22.7 MB · 10月13日更新</span></div>
           </div>
           <div class="frow-a">
@@ -420,7 +440,7 @@
         <div class="frow" data-name="【标箱组】大区总监差旅方案.xlsx 大区总监差旅方案.xlsx 各岗位住宿、交通、餐补等额度标准。">
           <span class="badge xls">XLS</span>
           <div class="frow-t">
-            <div class="fname"><span class="fn-t">大区总监差旅方案.xlsx</span><span class="os-mini" style="color:#1C6FDB;background:#E7F0FC">SFA APP</span></div>
+            <div class="fname"><span class="fn-t">大区总监差旅方案.xlsx</span><span class="os-mini" style="color:#1C6FDB;background:#E7F0FC">造旺小助手APP</span></div>
             <div class="fintro">各岗位住宿、交通、餐补等额度标准。<span class="fmeta"> · 121 KB · 11月13日更新</span></div>
           </div>
           <div class="frow-a">
@@ -428,19 +448,19 @@
           </div>
         </div>
   </section>
-  <section class="sec" id="dom-xiaoshou" style="flex-grow:4;flex-shrink:0">
+  <section class="sec" id="dom-xiaoshou" style="flex-grow:5;flex-shrink:0">
     <div class="sec-head">
       <svg class="sec-ic" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="background:#F59E0B1F"><polyline points="22 7 13.5 15.5 9.5 11.5 2 19"/><polyline points="16 7 22 7 22 13"/></svg>
       <span class="sec-title">销售管理域</span>
-      <span class="cnt" style="color:#F59E0B;background:#F59E0B1F">4</span>
+      <span class="cnt" style="color:#F59E0B;background:#F59E0B1F">5</span>
       <span class="sec-desc">销售过程管理、作业奖惩与结果追踪</span>
     </div>
     
-        <div class="frow" data-name="sfaapp下载与政策查询路径.pdf sfaapp下载与政策查询路径.pdf sfa工具下载与销售政策查询路径。">
+        <div class="frow" data-name="sfaapp下载与政策查询路径.pdf sfaapp下载与政策查询路径.pdf 造旺小助手app下载与销售政策查询路径。">
           <span class="badge pdf">PDF</span>
           <div class="frow-t">
-            <div class="fname"><span class="fn-t">SFAAPP下载与政策查询路径.pdf</span><span class="os-mini" style="color:#1C6FDB;background:#E7F0FC">SFA APP</span></div>
-            <div class="fintro">SFA工具下载与销售政策查询路径。<span class="fmeta"> · 1.2 MB · 11月16日更新</span></div>
+            <div class="fname"><span class="fn-t">SFAAPP下载与政策查询路径.pdf</span><span class="os-mini" style="color:#1C6FDB;background:#E7F0FC">造旺小助手APP</span></div>
+            <div class="fintro">造旺小助手APP下载与销售政策查询路径。<span class="fmeta"> · 1.2 MB · 11月16日更新</span></div>
           </div>
           <div class="frow-a">
             <button class="mini dl" data-href="files/SFAAPP%E4%B8%8B%E8%BD%BD%E4%B8%8E%E6%94%BF%E7%AD%96%E6%9F%A5%E8%AF%A2%E8%B7%AF%E5%BE%84.pdf" style="background:#F59E0B">下载</button>
@@ -449,7 +469,7 @@
         <div class="frow" data-name="q3过程考核要求8月大区总监 (4).xlsx 过程考核要求.xlsx 考勤、拜访等六大模块考核与扣罚标准。">
           <span class="badge xls">XLS</span>
           <div class="frow-t">
-            <div class="fname"><span class="fn-t">过程考核要求.xlsx</span><span class="os-mini" style="color:#1C6FDB;background:#E7F0FC">SFA APP</span></div>
+            <div class="fname"><span class="fn-t">过程考核要求.xlsx</span><span class="os-mini" style="color:#1C6FDB;background:#E7F0FC">造旺小助手APP</span></div>
             <div class="fintro">考勤、拜访等六大模块考核与扣罚标准。<span class="fmeta"> · 29 KB · 11月13日更新</span></div>
           </div>
           <div class="frow-a">
@@ -459,7 +479,7 @@
         <div class="frow" data-name="目标设置&amp;人员汰换规则.xlsx 目标设置&amp;人员汰换规则.xlsx 目标制定拆分与人员汰换规则。">
           <span class="badge xls">XLS</span>
           <div class="frow-t">
-            <div class="fname"><span class="fn-t">目标设置&amp;人员汰换规则.xlsx</span><span class="os-mini" style="color:#7C3AED;background:#F0EAFE">SFA网页端</span></div>
+            <div class="fname"><span class="fn-t">目标设置&amp;人员汰换规则.xlsx</span><span class="os-mini" style="color:#7C3AED;background:#F0EAFE">造旺小助手网页端</span></div>
             <div class="fintro">目标制定拆分与人员汰换规则。<span class="fmeta"> · 1.1 MB · 11月11日更新</span></div>
           </div>
           <div class="frow-a">
@@ -469,11 +489,21 @@
         <div class="frow" data-name="旺金币发放操作说明.png 旺金币发放操作说明.png 旺金币发放对象、规则与操作入口。">
           <span class="badge img">IMG</span>
           <div class="frow-t">
-            <div class="fname"><span class="fn-t">旺金币发放操作说明.png</span><span class="os-mini" style="color:#7C3AED;background:#F0EAFE">SFA网页端</span></div>
+            <div class="fname"><span class="fn-t">旺金币发放操作说明.png</span><span class="os-mini" style="color:#7C3AED;background:#F0EAFE">造旺小助手网页端</span></div>
             <div class="fintro">旺金币发放对象、规则与操作入口。<span class="fmeta"> · 1.9 MB · 11月13日更新</span></div>
           </div>
           <div class="frow-a">
             <button class="mini dl" data-href="files/%E6%97%BA%E9%87%91%E5%B8%81%E5%8F%91%E6%94%BE%E6%93%8D%E4%BD%9C%E8%AF%B4%E6%98%8E.png" style="background:#F59E0B">下载</button>
+          </div>
+        </div>
+        <div class="frow" data-name="旺金币转移操作说明.png 旺金币转移操作说明.png 旺金币组织账户间转移的操作规则与流程。">
+          <span class="badge img">IMG</span>
+          <div class="frow-t">
+            <div class="fname"><span class="fn-t">旺金币转移操作说明.png</span><span class="os-mini" style="color:#7C3AED;background:#F0EAFE">造旺小助手网页端</span></div>
+            <div class="fintro">旺金币组织账户间转移的操作规则与流程。<span class="fmeta"> · 3.0 MB · 11月17日更新</span></div>
+          </div>
+          <div class="frow-a">
+            <button class="mini dl" data-href="files/%E6%97%BA%E9%87%91%E5%B8%81%E8%BD%AC%E7%A7%BB%E6%93%8D%E4%BD%9C%E8%AF%B4%E6%98%8E.png" style="background:#F59E0B">下载</button>
           </div>
         </div>
   </section>
@@ -537,7 +567,7 @@
         <div class="frow" data-name="渠道政策费用形式介绍与旺金币使用规则.pdf 渠道政策费用形式介绍与旺金币使用规则.pdf 赠品、抵扣、折扣等费用形式与旺金币规则。">
           <span class="badge pdf">PDF</span>
           <div class="frow-t">
-            <div class="fname"><span class="fn-t">渠道政策费用形式介绍与旺金币使用规则.pdf</span><span class="os-mini" style="color:#7C3AED;background:#F0EAFE">SFA网页端</span><span class="os-mini" style="color:#1C6FDB;background:#E7F0FC">SFA APP</span></div>
+            <div class="fname"><span class="fn-t">渠道政策费用形式介绍与旺金币使用规则.pdf</span><span class="os-mini" style="color:#7C3AED;background:#F0EAFE">造旺小助手网页端</span><span class="os-mini" style="color:#1C6FDB;background:#E7F0FC">造旺小助手APP</span></div>
             <div class="fintro">赠品、抵扣、折扣等费用形式与旺金币规则。<span class="fmeta"> · 777 KB · 11月16日更新</span></div>
           </div>
           <div class="frow-a">
@@ -547,7 +577,7 @@
         <div class="frow" data-name="【标箱组】2026年11月整体政策+产品盘价与政策力度明细表.xlsx 整体政策+产品盘价与政策力度明细表.xlsx 11月渠道销售政策、下单规则与全品项盘价明细。">
           <span class="badge xls">XLS</span>
           <div class="frow-t">
-            <div class="fname"><span class="fn-t">整体政策+产品盘价与政策力度明细表.xlsx</span><span class="os-mini" style="color:#1C6FDB;background:#E7F0FC">SFA APP</span></div>
+            <div class="fname"><span class="fn-t">整体政策+产品盘价与政策力度明细表.xlsx</span><span class="os-mini" style="color:#1C6FDB;background:#E7F0FC">造旺小助手APP</span></div>
             <div class="fintro">11月渠道销售政策、下单规则与全品项盘价明细。<span class="fmeta"> · 47.6 MB · 11月13日更新</span></div>
           </div>
           <div class="frow-a">
@@ -557,7 +587,7 @@
         <div class="frow" data-name="标箱组产品手册_261029.pdf 产品手册.pdf 乳品、果蔬汁、酒类产品卖点与建议零售价。">
           <span class="badge pdf">PDF</span>
           <div class="frow-t">
-            <div class="fname"><span class="fn-t">产品手册.pdf</span><span class="os-mini" style="color:#1C6FDB;background:#E7F0FC">SFA APP</span></div>
+            <div class="fname"><span class="fn-t">产品手册.pdf</span><span class="os-mini" style="color:#1C6FDB;background:#E7F0FC">造旺小助手APP</span></div>
             <div class="fintro">乳品、果蔬汁、酒类产品卖点与建议零售价。<span class="fmeta"> · 8.5 MB · 11月13日更新</span></div>
           </div>
           <div class="frow-a">
@@ -575,11 +605,11 @@
           </div>
         </div>
   </section>
-  <section class="sec" id="dom-gongyinglian" style="flex-grow:4;flex-shrink:0">
+  <section class="sec" id="dom-gongyinglian" style="flex-grow:5;flex-shrink:0">
     <div class="sec-head">
       <svg class="sec-ic" viewBox="0 0 24 24" fill="none" stroke="#6366F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="background:#6366F11F"><rect x="1" y="4" width="14" height="11" rx="1"/><polygon points="15 9 19.5 9 23 12.5 23 15 15 15"/><circle cx="5.5" cy="18.5" r="2.3"/><circle cx="18" cy="18.5" r="2.3"/></svg>
       <span class="sec-title">供应链管理域</span>
-      <span class="cnt" style="color:#6366F1;background:#6366F11F">4</span>
+      <span class="cnt" style="color:#6366F1;background:#6366F11F">5</span>
       <span class="sec-desc">产销协同、仓储物流与客户履约</span>
     </div>
     
@@ -596,7 +626,7 @@
         <div class="frow" data-name="销售预估（货需）提报操作手册.pdf 销售预估（货需）提报操作手册.pdf 销售预估（货需）提报新流程与时限。">
           <span class="badge pdf">PDF</span>
           <div class="frow-t">
-            <div class="fname"><span class="fn-t">销售预估（货需）提报操作手册.pdf</span><span class="os-mini" style="color:#7C3AED;background:#F0EAFE">SFA网页端</span></div>
+            <div class="fname"><span class="fn-t">销售预估（货需）提报操作手册.pdf</span><span class="os-mini" style="color:#7C3AED;background:#F0EAFE">造旺小助手网页端</span></div>
             <div class="fintro">销售预估（货需）提报新流程与时限。<span class="fmeta"> · 926 KB · 11月6日更新</span></div>
           </div>
           <div class="frow-a">
@@ -613,20 +643,30 @@
             <button class="mini dl" data-href="files/%E9%A2%84%E6%89%93%E6%AC%BE%E6%93%8D%E4%BD%9C%E6%8C%87%E5%BC%95.pdf" style="background:#6366F1">下载</button>
           </div>
         </div>
-        <div class="frow" data-name="发票申请操作指引.pdf 发票申请操作指引.pdf 发票申请的操作流程与填写要点。">
-          <span class="badge pdf">PDF</span>
+        <div class="frow" data-name="发票申请操作指引.png 发票申请操作指引.png 发票申请的操作流程与填写要点。">
+          <span class="badge img">IMG</span>
           <div class="frow-t">
-            <div class="fname"><span class="fn-t">发票申请操作指引.pdf</span><span class="os-mini" style="color:#EA580C;background:#FEF0E7">造旺计划APP</span></div>
-            <div class="fintro">发票申请的操作流程与填写要点。<span class="fmeta"> · 409 KB · 11月16日更新</span></div>
+            <div class="fname"><span class="fn-t">发票申请操作指引.png</span><span class="os-mini" style="color:#EA580C;background:#FEF0E7">造旺计划APP</span></div>
+            <div class="fintro">发票申请的操作流程与填写要点。<span class="fmeta"> · 1.9 MB · 11月17日更新</span></div>
           </div>
           <div class="frow-a">
-            <button class="mini dl" data-href="files/%E5%8F%91%E7%A5%A8%E7%94%B3%E8%AF%B7%E6%93%8D%E4%BD%9C%E6%8C%87%E5%BC%95.pdf" style="background:#6366F1">下载</button>
+            <button class="mini dl" data-href="files/%E5%8F%91%E7%A5%A8%E7%94%B3%E8%AF%B7%E6%93%8D%E4%BD%9C%E6%8C%87%E5%BC%95.png" style="background:#6366F1">下载</button>
+          </div>
+        </div>
+        <div class="frow" data-name="库存公共池（释放库存）操作说明.png 库存公共池（释放库存）操作说明.png 库存公共池释放库存的操作流程与规则。">
+          <span class="badge img">IMG</span>
+          <div class="frow-t">
+            <div class="fname"><span class="fn-t">库存公共池（释放库存）操作说明.png</span><span class="os-mini" style="color:#EA580C;background:#FEF0E7">造旺计划APP</span></div>
+            <div class="fintro">库存公共池释放库存的操作流程与规则。<span class="fmeta"> · 1.6 MB · 11月17日更新</span></div>
+          </div>
+          <div class="frow-a">
+            <button class="mini dl" data-href="files/%E5%BA%93%E5%AD%98%E5%85%AC%E5%85%B1%E6%B1%A0%EF%BC%88%E9%87%8A%E6%94%BE%E5%BA%93%E5%AD%98%EF%BC%89%E6%93%8D%E4%BD%9C%E8%AF%B4%E6%98%8E.png" style="background:#6366F1">下载</button>
           </div>
         </div>
   </section></div>
   </main>
   <div class="empty" id="empty">没有找到匹配的资料，换个关键词试试</div>
-  <footer>标箱组内部培训资料 · 仅供内部学习使用 · 更新至 2026-11-17</footer>
+  <footer>标箱组内部培训资料 · 仅供内部学习使用 · 更新至 2026-11-24</footer>
 </div>
 
 <script>
@@ -731,8 +771,8 @@
       tabs.forEach(function (t) { t.classList.toggle('active', t === tab); });
       Object.keys(views).forEach(function (k) { views[k].classList.toggle('active', k === v); });
       sub.innerHTML = v === 'scene'
-        ? '按业务场景 · 共 <b>19</b> 份 · <b>6</b> 大场景'
-        : '按系统域 · 共 <b>19</b> 份 · <b>6</b> 个域';
+        ? '按业务场景 · 共 <b>21</b> 份 · <b>6</b> 大场景'
+        : '按系统域 · 共 <b>21</b> 份 · <b>6</b> 个域';
       applyFilter();
     });
   });
